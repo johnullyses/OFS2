@@ -49,7 +49,7 @@ module.exports = configure(function (ctx) {
       env: envparser(ctx),
       vueRouterMode: 'history', // available values: 'hash', 'history'
       
-      publicPath: ctx.prod ? '/ofs/dist/spa' : '',
+      // publicPath: ctx.prod ? '/OFS2/dist/spa' : '',
       // transpile: false,
 
       // Add dependencies for transpiling with Babel (Array of string/regex)
