@@ -19,7 +19,7 @@
               style="width: 60%"
             />
             <h3><b>OFS</b></h3>
-            <p style="margin-top: 150px;">Login to access your  TEST<b>Order <br>Fullfilment Service</b></p>
+            <p style="margin-top: 150px;">Login to access your  TESTing<b>Order <br>Fullfilment Service</b></p>
           </center>
         </div>
         <div class="col-md-7 col-xs-12" style="padding: 50px;">
