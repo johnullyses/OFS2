@@ -57,6 +57,7 @@ export default {
             password: payload.password
         })
         .then(response => {
+          console.log(response)
           if (response.data.access_token) {
             context.commit("SET_ACCESS_TOKEN", response.data.access_token)
             this.$router.go()

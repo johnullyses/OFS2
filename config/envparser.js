@@ -8,6 +8,5 @@ module.exports = function () {
       parsedEnv[key] = JSON.stringify(parsedEnv[key])
     }
    }
-   console.log(parsedEnv)
   return parsedEnv
 }
