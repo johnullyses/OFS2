@@ -1,14 +1,13 @@
 const DotEnv = require('dotenv')
+const parsedEnv = DotEnv.config().parsed
 
-module.exports = function (ctx) {
+module.exports = function () {
   // Let's stringify our variables
-  const parsedEnv = DotEnv.config({ path: ctx.dev ? '.env' : '.env.prod' }).parsed
-
   for (key in parsedEnv) {
     if (typeof parsedEnv[key] === 'string') {
-      parsedEnv[key] = parsedEnv[key]
+      parsedEnv[key] = JSON.stringify(parsedEnv[key])
     }
-  }
-  console.log(parsedEnv)
+   }
+   console.log(parsedEnv)
   return parsedEnv
 }
