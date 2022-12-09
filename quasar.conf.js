@@ -14,6 +14,8 @@ console.log("+++++++++++++++"),
 
 module.exports = configure(function (ctx) {
   console.log(envparser(ctx))
+
+  console.log('hello')
   return {
     // https://v2.quasar.dev/quasar-cli/supporting-ts
     supportTS: false,
